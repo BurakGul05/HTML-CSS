@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>URUNLER</title>
+      <link rel="stylesheet" href="/product.css">
+
+      <!-- burdan -->
+</head>
+
+<body>
+      <!-- <div class="resimler">
+      <img  width="150px" src="/img/product/nike1.jpg" alt="Nike1">
+            <div class="bilgiler" >
+                  <div class="urun">
+
+                        <p>Urun: NIKE</p>
+                        <p>Turu: ERKEK AYAKKABI</p>
+                        <p>Stok:100</p>
+
+                        <p></p>
+                        </table>
+                        <label >siparis adeti</label>
+                        <input type="number" min="1" max="90" value="1" ><br><br>
+                       <input type="submit" value="Sepete ekle">
+
+
+
+
+                  </div>
+
+
+            </div>
+
+      </div> -->
+
+      <div class="navbar">
+            <h3>Menü</h3>
+            <a class="navlink" href="/index.html">Anasayfa</a> |
+            <a class="navlink" href="/about.html">Hakkımızda</a> |
+            <a class="navlink" href="/gallery.html">Galeri </a> |
+            <a class="navlink" href="/contact.html">Iletisim</a> |
+            <a class="navlink" href="login.html">Giris Yap </a> |
+            <a class="navlink" href="register.html">Kayıt Ol</a> |<br>
+      </div>
+
+
+
+
+
+      <!-- <style>
+            .resimler {
+                  display: flex;
+                  gap: 20px;
+                  justify-content: center;
+                  text-align: center;
+                  font-family: Arial, sans-serif;
+            }
+
+
+            .urun {
+                  border: 1px solid #000;
+                  width: 200px;
+                  padding: 10px;
+            }
+
+
+            .bilgiler {
+                  border-top: 1px solid #000;
+                  margin-top: 10px;
+                  padding-top: 10px;
+            }
+
+            img {
+                  display: block;
+                  margin: 0 auto 10px;
+            }
+      </style> 
+
+         <div class="resimler">
+
+            <div class="urun">
+                  <img   width="150px" src="/img/product/shoe3.jpeg" alt="Nike1">
+                  <div class="bilgiler">
+                        <p>Urun: NIKE</p>
+                        <p>Turu: ERKEK AYAKKABI</p>
+                        <p>Stok: 90</p>
+
+                        <label>Siparis Adeti</label><br>
+                        <input type="number" min="1" max="90" value="1"><br><br>
+                       <div class="sepet">
+                        <input type="submit" value="Sepete ekle">
+                        </div>
+                  </div>
+            </div>
+
+            <div class="urun">
+                  <img width="110px" src="/img/product/nike2.jpg" alt="Nike2">
+                  <div class="bilgiler">
+                        <p>Urun: Nike</p>
+                        <p>Turu: KADIN AYAKKABI</p>
+                        <p>Stok: 50</p>
+
+                        <label>Siparis Adeti</label><br>
+                        <input type="number" min="1" max="50" value="1"><br><br>
+                        <div class="sepet">
+                        <input type="submit" value="Sepete ekle">
+                        </div>
+                  </div>
+            </div>
+
+            <div class="urun">
+                  <img width="190px" src="/img/product/nike3.jpg" alt="Nike3">
+                  <div class="bilgiler">
+                        <p>Urun: Nike</p>
+                        <p>Turu: SPOR AYAKKABI</p>
+                        <p>Stok: 30</p>
+
+                        <label>Siparis Adeti</label><br>
+                        <input type="number" min="1" max="30" value="1"><br><br>
+                       <div class="sepet">
+                        <input type="submit" value="Sepete ekle">
+                        </div>
+                  </div>
+            </div>
+
+      </div>  -->
+
+<!-- ! BENIM ODEV SAYFAM  -->
+
+      <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Ürün Sayfası - 3'lü Görünüm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Arka plan beyaz */
+        body {
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start; /* Görseldeki soldan başlama düzeni */
+        }
+
+        /* Ana Kapsayıcı: 79px üst ve 58px sol boşluk */
+        .main-wrapper {
+            padding-top: 79px;
+            padding-left: 58px;
+            padding-right: 58px;
+            display: flex;
+            gap: 30px; /* Kartlar arasındaki 30px boşluk */
+        }
+
+        /* Her Bir Ürün Kartı (563px Genişlik) */
+        .product-card {
+            width: 563px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Resim Alanı (563x683, #F6F6F6) */
+        .image-placeholder {
+            width: 563px;
+            height: 683px;
+            background-color: #F6F6F6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px; /* Yazı alanı ile arası 30px */
+            border: 1px dashed #ccc; /* Resim yokken alanı görmen için ince çizgi */
+        }
+
+        .image-placeholder img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Ürün Bilgi Alanı (Roboto Regular, 18px, #868686) */
+        .info-section {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: #868686;
+            margin-bottom: 60px; /* Buton ile arası 60px */
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 6px;
+        }
+
+        .label {
+            width: 140px;
+        }
+
+        .value {
+            color: #000000;
+        }
+
+        /* Sipariş Adeti Girişi */
+        .qty-input {
+            width: 60px;
+            background-color: #F0F0F0;
+            border: 1px solid #D1D1D1;
+            padding: 2px 5px;
+            font-size: 16px;
+        }
+
+        /* Sepete Ekle Butonu (#1626FF, 75px Yükseklik, 25px Font) */
+        .add-btn {
+            width: 563px;
+            height: 75px;
+            background-color: #1626FF;
+            color: #F0F0FD;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .add-btn:hover {
+            opacity: 0.9;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        
+        <div class="product-card">
+            <div class="image-placeholder">
+               <img src="/img/product/shoe1.png" alt="">
+            </div>
+            <div class="info-section">
+                <div class="info-row"><span class="label">Ürün</span><span class="value">NIKE</span></div>
+                <div class="info-row"><span class="label">Türü</span><span class="value">Erkek Ayakkabı</span></div>
+                <div class="info-row"><span class="label">Stok</span><span class="value">90</span></div>
+                <div class="info-row"><span class="label">Sipariş Adeti</span><input type="number" value="1" class="qty-input"></div>
+            </div>
+            <button class="add-btn">SEPETE EKLE</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-placeholder">
+               <img src="/img/product/shoe2.png" alt="">
+            </div>
+            <div class="info-section">
+                <div class="info-row"><span class="label">Ürün</span><span class="value">NIKE</span></div>
+                <div class="info-row"><span class="label">Türü</span><span class="value">Erkek Ayakkabı</span></div>
+                <div class="info-row"><span class="label">Stok</span><span class="value">90</span></div>
+                <div class="info-row"><span class="label">Sipariş Adeti</span><input type="number" value="1" class="qty-input"></div>
+            </div>
+            <button class="add-btn">SEPETE EKLE</button>
+        </div>
+
+        <div class="product-card">
+            <div class="image-placeholder">
+               <img src="/img/product/shoe3.png" alt="">
+            </div>
+            <div class="info-section">
+                <div class="info-row"><span class="label">Ürün</span><span class="value">NIKE</span></div>
+                <div class="info-row"><span class="label">Türü</span><span class="value">Erkek Ayakkabı</span></div>
+                <div class="info-row"><span class="label">Stok</span><span class="value">90</span></div>
+                <div class="info-row"><span class="label">Sipariş Adeti</span><input type="number" value="1" class="qty-input"></div>
+            </div>
+            <button class="add-btn">SEPETE EKLE</button>
+        </div>
+
+    </div>
+
+</body>
+</html> 
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Ürün Sayfasi Ödevi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Tüm sayfa genel ayarları */
+        body {
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        /* En soldaki menü başlığı (Kaydol) */
+        .header-menu {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .header-menu a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* Ürünleri yan yana dizen kapsayıcı */
+        .product-container {
+            display: flex;
+            gap: 20px; /* Ürünler arası boşluk */
+            justify-content: flex-start;
+        }
+
+        /* Tek bir ürün kartının genel yapısı */
+        .product-card {
+            width: 300px; /* Kart genişliği */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- İSTEDİĞİN DEĞİŞİKLİK BURADA --- */
+        /* Ayakkabı resminin içindeki gri kutu */
+        .product-image-box {
+            width: 100%;
+            height: 400px; /* Tahmini yükseklik */
+            background-color: #f6f6f6; /* Görseldeki hafif gri ton */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            overflow: hidden;
+
+            /* ÇİZGİLERİN OLMMASI İÇİN BORDER'I KALDIRDIK */
+            border: none; /* Bu satır, kesik çizgili çerçeveyi yok eder */
+        }
+
+        /* Gri kutunun içindeki ayakkabı resmi */
+        .product-image-box img {
+            max-width: 80%; /* Resmi kutuya sığdırmak için */
+            height: auto;
+        }
+
+        /* Detay yazıları alanı (Ürün, Türü, Stok...) */
+        .product-details {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .details-row {
+            display: flex;      /* kutunun icindekileri yanyan diz     */
+            justify-content: space-between;
+        }
+
+        .details-label {
+            color: #888; /* Sol taraftaki gri etiketler */
+            font-size: 20px;
+
+        }
+
+        .details-value {
+            color: #000; /* Sağ taraftaki siyah değerler */
+            font-weight: bold;
+            
+        }
+
+        /* Sipariş Adeti giriş kutusu */
+        .qty-input {
+            width: 40px;
+            height: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        /* Mavi Sepete Ekle Butonu */
+        .add-btn {
+            width: 100%;
+            height: 60px;
+            background-color: #1626FF; /* Görseldeki mavi ton */
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase; /* Tüm harfleri büyüt */
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 1px;
+        }
+
+        .add-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+   
+
+    <div class="product-container">
+        
+        <div class="product-card">
+            <div class="product-image-box">
+                <img src="/img/product/shoe1.png" alt="Nike Gümüş Ayakkabı">
+            </div>
+            <div class="product-details">
+                <div class="details-row"><span class="details-label">Ürün</span> <span class="details-value">NIKE</span></div>
+                <div class="details-row"><span class="details-label">Türü</span> <span class="details-value">Erkek ayakkabı</span></div>
+                <div class="details-row"><span class="details-label">Stok</span> <span class="details-value"   >90</span></div>
+                <div class="details-row"   ><span class="details-label">Sipariş Adeti</span> <span class="details-value"  ><input type="number"  min="1" max="90" value="1" class="qty-input"></span></div>
+            </div>
+            <button class="add-btn">SEPETE EKLE</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-box">
+                <img src="/img/product/shoe2.png" alt="Nike Siyah Beyaz Ayakkabı">
+            </div>
+            <div class="product-details">
+                <div class="details-row"><span class="details-label">Ürün</span> <span class="details-value">NIKE</span></div>
+                <div class="details-row"><span class="details-label">Türü</span> <span class="details-value">Erkek ayakkabı</span></div>
+                <div class="details-row"><span class="details-label">Stok</span> <span class="details-value">90</span></div>
+                <div class="details-row"><span class="details-label">Sipariş Adeti</span> <span class="details-value"><input type="number"  min="1" max="90" value="1" class="qty-input"></span></div>
+            </div>
+            <button class="add-btn">SEPETE EKLE</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-box">
+                <img src="/img/product/shoe3.png" alt="Nike Siyah Ayakkabı">
+            </div>
+            <div class="product-details">
+                <div class="details-row"><span class="details-label">Ürün</span> <span class="details-value">NIKE</span></div>
+                <div class="details-row"><span class="details-label">Türü</span> <span class="details-value">Erkek ayakkabı</span></div>
+                <div class="details-row"><span class="details-label">Stok</span> <span class="details-value">90</span></div>
+                <div class="details-row"><span class="details-label">Sipariş Adeti</span> <span class="details-value"><input type="number"   min="1" max="90" value="1" class="qty-input"></span></div>
+            </div>
+            <button class="add-btn">SEPETE EKLE</button>
+        </div>
+
+    </div> 
+
+</body>
+</html> -->

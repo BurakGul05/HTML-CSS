@@ -1,0 +1,299 @@
+/* HAZIR TAGLER */
+body {
+      background-color: azure;
+      font-family: Arial;
+}
+
+p {
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+}
+
+a {
+
+      text-decoration: none;
+      color: blue;
+}
+
+h1 {
+      font-family: Arial;
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+
+}
+
+h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+}
+
+td {
+      font-size: 20;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+small {
+      font-size: 20px;
+      color: red;
+}
+
+div {
+      border: 1px solid black;
+      background-color: white;
+
+
+}
+
+
+input[type=submit] {
+      background-color: rgba(118, 118, 169, 0.655);
+      padding: 5px 10px;
+      color: white;
+      border-radius: 10px;
+}
+
+
+/* LINKLER*/
+.navbar {
+
+      padding: 20px;
+      color: red;
+     background-color: cadetblue;
+     padding-bottom: 20px;
+     margin-bottom: 30px;
+}
+
+
+
+.navlink {
+      font-size: 20px;
+     color: black;
+     
+      font-family: 'Times New Roman', Times, serif;
+}
+
+
+.navlink:hover {
+      font-weight: bold;
+      /* ?uzerine gelince kalin ol */
+
+}
+
+
+
+/* ANASAYFA */
+.home_tag {
+      padding: 20px 5%;
+
+}
+
+
+.home_table {
+      padding: 20px 5%;
+
+}
+
+
+.home_type {
+      padding: 20px 5%;
+
+}
+
+
+.home_form {
+      padding: 20px 5%;
+
+}
+
+
+
+/* HAKKIMIZDA */
+.icerik_div {
+      padding: 20px 5%;
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+
+.icerik_metin {
+      color: blueviolet;
+      background-color: #5645;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+.galeri_resim {
+      border: 1px solid black;
+      height: 100px;
+      width: 200px;
+      background-color: white;
+      margin-bottom: 20px;
+      margin-left: 20px;
+
+}
+
+/* REGISTER SAYFAMIZ */
+.register_div {
+      /* padding: 20px 20%;   asgida yazanla aynisi daha kisa olani    */
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 20%;
+      padding-right: 20%;
+      text-align: center;
+
+}
+
+.contact_div {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20%;
+      padding-right: 20%;
+      text-align: center;
+
+}
+
+.login_div {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20%;
+      padding-right: 20%;
+      text-align: center;
+
+}
+
+.contact_map {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: center;
+
+}
+
+/* PRICE CARD */
+.price {
+      border: 0px;
+      background-color: antiquewhite;
+      width: 100%;
+      padding-left: 20%;
+      /* display: flexbox;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 3%; */
+
+}
+
+.card {
+
+      width: 20%;
+      height: 300px;
+      background-color: rgb(22, 21, 21);
+      border: 0px;
+      border-radius: 10px;
+      box-shadow: 10px 5px rgba(127, 255, 212, 0.618);
+      padding: 0;
+      display: inline-block;
+
+}
+
+@media (max-width:800px) {
+      .card {
+            width: 100%;
+            margin-top: 10px;
+
+      }
+
+      .price {
+
+            padding-left: 0;
+
+      }
+
+
+
+}
+
+
+
+/* .card:hover{
+      box-shadow: 5px 5px ;
+} */
+
+.card_header {
+      height: 60px;
+      background-color: mediumaquamarine;
+      border-radius: 10px 10px 0 0;
+      text-align: center;
+    
+      background: linear-gradient(137deg, rgba(83, 230, 217, 1) 0%, rgba(107, 194, 160, 1) 25%, rgba(102, 205, 170, 1) 45%, rgba(126, 176, 116, 1) 100%);
+      padding-top: 20px;
+      
+      
+
+
+
+}
+
+.card_header p {
+      margin: 0px;
+      color: white;
+      font-size: 20px;
+      padding: 0px;
+      font-weight: bold;
+
+
+}
+
+.card_context {
+      height: 240px;
+      border-radius: 0 0 10px 10px;
+      text-align: center;
+      border: 1px solid black;
+}
+
+
+.card_context h4 {
+      padding: 15px;
+
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+
+
+}
+
+.card_context p {
+      font-size: 10px;
+      margin: 0;
+
+}
+
+
+
+.card_context input[type=button] {
+      background: none;
+      padding: 8px;
+      border-radius: 10px;
+      border: 0px;
+      color: white;
+      background-color: mediumaquamarine;
+      background: linear-gradient(137deg, rgba(83, 230, 217, 1) 0%, rgba(107, 194, 160, 1) 25%, rgba(102, 205, 170, 1) 45%, rgba(126, 176, 116, 1) 100%);
+
+}
+
+.card_context input[type=button]:hover {
+      color: mediumaquamarine;
+      background-color: white;
+      border: 1px solid mediumaquamarine;
+}
